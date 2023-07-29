@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            /* 父级清除浮动，但无法显示溢出部分 */
+            overflow: hidden;
+            width: 900px;
+            background-color: gray;
+            margin: 0 auto;
+        }
+
+        .one1 {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(155, 236, 23);
+            float: left;
+        }
+
+        .one2 {
+            width: 200px;
+            height: 150px;
+            background-color: red;
+            float: left;
+        }
+
+        .one3 {
+            height: 240px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="one1">number1</div>
+        <div class="one2">number2</div>
+    </div>
+    <div class="one3">number3</div>
+</body>
+
+</html>

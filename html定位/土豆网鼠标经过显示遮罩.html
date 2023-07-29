@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tudou {
+            position: relative;
+            width: 402px;
+            height: 224.06px;
+            margin: 30px auto;
+        }
+
+        .tudou img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .mask {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgb(0, 0, 0, .4) url(/img/arr.png) no-repeat center;
+        }
+
+        .tudou:hover .mask {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tudou">
+        <a href="https://play.tudou.com/v_show/id_XNTk4ODI2MzQ4NA==.html?spm=a2hex.20746969_WEBHOME_GRAY.drawer3.d_zj1_1&scm=20140719.apircmd.24400.video_XNTk4ODI2MzQ4NA%3D%3D&playMode=pugv"
+            target="_blank">
+            <div class="mask"></div>
+        </a>
+        <img src="/img/土豆.jpg" alt="error">
+    </div>
+</body>
+
+</html>

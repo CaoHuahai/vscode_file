@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            /* 相对定位 */
+            position: relative;
+            top: 100px;
+            left: 100px;
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <li>相对于自己原来的位置来移动</li>
+    <li>原来的位置继续占有，后面的盒子视其为标准流。</li>
+    <li>不脱标</li>
+    <hr>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+
+</html>

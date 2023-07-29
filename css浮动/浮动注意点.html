@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 900px;
+            height: 300px;
+            background-color: gray;
+            margin: 0 auto;
+        }
+
+        .one1 {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(155, 236, 23);
+        }
+
+        .one2 {
+            width: 200px;
+            height: 150px;
+            background-color: red;
+            float: left;
+        }
+
+        .one3 {
+            width: 300px;
+            height: 240px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>一个元素浮动了，理论上其余的兄弟元素也要浮动</h3>
+    <span>浮动的盒子只会影响浮动盒子后面的标准流，不会影响前面的标准流。</span>
+    <hr>
+    <div class="box">
+        <div class="one1">number1</div>
+        <div class="one2">number2</div>
+        <div class="one3">number3</div>
+    </div>
+</body>
+
+</html>

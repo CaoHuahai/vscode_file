@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .static {
+            width: 150px;
+            height: 150px;
+            background-color: orange;
+            display: inline-block;
+        }
+
+        .float {
+            width: 150px;
+            height: 150px;
+            background-color: orange;
+            /* float:none(默认)/left/right */
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>标准流</h1>
+    <h5>块级元素</h5>
+    <p>常用元素：div,hr,p,h1-h6,ul,ol,dl,form,table</p>
+    <h5>行内元素</h5>
+    <p>常用元素：span,a,i,em等</p>
+    <hr>
+    <h1>浮动流</h1>
+    <span>网页布局准则：多个块级元素纵向排列找标准流，多个块级元素横向排列找浮动。</span>
+    <h5>标准流存在缝隙</h5>
+    <div class="static">1</div>
+    <div class="static">2</div>
+    <div class="static">3</div>
+    <h5>浮动流</h5>
+    <div class="float">1</div>
+    <div class="float">2</div>
+    <div class="float">3</div>
+</body>
+
+</html>

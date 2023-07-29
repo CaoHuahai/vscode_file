@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dj {
+            position: fixed;
+            top: 100px;
+            right: 40px;
+        }
+
+        .w {
+            width: 800px;
+            height: 1400px;
+            background-color: gray;
+            margin: 0 auto;
+        }
+
+        .fixed {
+            position: fixed;
+            /* 先移动浏览器的一半 */
+            left: 50%;
+            /* 再移动版心盒子的一半 */
+            margin-left: 410px;
+            width: 50px;
+            height: 150px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <li>以浏览器的可视窗口为参照点移动元素</li>
+
+    <div class="dj">
+        <img src="../study.net/images/dj.png" alt="error">
+    </div>
+    <div class="fixed"></div>
+    <div class="w">版心盒子</div>
+</body>
+
+</html>

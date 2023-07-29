@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 伪类选择器 (：)-->
+    <!-- 
+        a:link     /选择所有未被访问的链接
+        a:visited   /选择所有已被访问的链接
+        a:hover     /选择鼠标指针位于其上的链接
+        a:active    /选择活动链接            
+        最好按上顺序书写 
+        口诀：love hate                -->
+    <style>
+        a:link {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: orange;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        a:active {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.mi.com">xiaomi</a><br>
+    <a href="https://www.baidu.com">baidu</a>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .tb-promo {
+            position: relative;
+            width: 846px;
+            height: 472px;
+            background-color: gray;
+            margin: 100px auto;
+        }
+
+        .tb-promo img {
+            width: 846px;
+            height: 472px;
+        }
+
+        .prev {
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            left: 0;
+            border-radius: 0 15px 15px 0;
+            width: 20px;
+            height: 30px;
+            background: rgb(0, 0, 0, .3);
+            text-align: center;
+            line-height: 30px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .next {
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            right: 0;
+            border-radius: 15px 0 0 15px;
+            width: 20px;
+            height: 30px;
+            background: rgb(0, 0, 0, .3);
+            text-align: center;
+            line-height: 30px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .promo-nav {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            margin-left: -35px;
+            width: 70px;
+            height: 13px;
+            background: rgb(255, 255, 255, .3);
+            border-radius: 7px;
+        }
+
+        .promo-nav li {
+            float: left;
+            width: 8px;
+            height: 8px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin: 3px;
+        }
+
+        .promo-nav .selected {
+            background-color: #ff5000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tb-promo">
+        <a href="https://pages.tmall.com/wow/a/act/tmall/dailyact/16403/16846/wupr?spm=a21bo.jianhua.201862-1.1.5af92a8901vL3a&wh_pid=dailyAct-504674&disableNav=YES&status_bar_transparent=true&scm=1007.home_pc.banner.activity&utparam=%7B%22x_object_type%22%3A%22shoujiao%22%7D"
+            target="_blank"><img src="/img/tb.png" alt="error" title="淘宝淘宝淘宝淘宝淘宝淘宝淘宝淘宝淘宝"></a>
+
+        <!-- 左箭头 -->
+        <a href="#" class="prev">&lt;</a>
+        <!-- 右箭头 -->
+        <a href="#" class="next">&gt;</a>
+        <!-- 小圆点 -->
+        <ul class="promo-nav">
+            <li class="selected"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+
+</html>

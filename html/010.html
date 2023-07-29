@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document010</title>
+</head>
+    <!-- 表单=表单域+提示信息+控件 -->
+    <!-- 表单域<form> -->
+    <!-- action+url地址，method+提交方式，name+表单域名称 -->
+    <h4>表单</h4>
+    <form>
+        <!-- type属性:text.button.password.radio.checkbox -->
+        <!-- value用户自定义，提示input -->
+        用户名：<input type="text" name="username" value="请输入用户名"><br>
+        &nbsp;&nbsp;&nbsp;密码：<input type="password" name="userpassword"><br>
+        <!-- 相同name,实现多选一 -->
+        &nbsp;&nbsp;&nbsp;性别：男<input type="radio" name="sex">女<input type="radio" name="sex"><br>
+        &nbsp;&nbsp;&nbsp;爱好：吃饭<input type="checkbox">睡觉<input type="checkbox"><br>
+        <!-- maxlength设置输入字段正整数最大长度 -->
+        出生年：<input type="datetime" maxlength="4" value="输入四位数年份"><br>
+        <!-- file文件上传 -->
+        &nbsp;&nbsp;&nbsp;头像：<input type="file"><br>
+        <!-- checked设置默认选中 -->
+        &nbsp;&nbsp;&nbsp;<input type="checkbox" checked="1">我同意信息保密协议<br>
+        <!-- submit提交表单 -->
+        &nbsp;&nbsp;&nbsp;<input type="submit" value="提交信息">
+        <!-- rest还原初始状态 -->
+        <input type="reset" value="重置信息">
+    </form>
+<body> 
+</body>
+</html>

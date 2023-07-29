@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            width: 150px;
+            height: 50px;
+            background-color: orange;
+            /* 行内元素转换为块级元素 */
+            display: block;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        div {
+            width: 300px;
+            height: 100px;
+            background-color: blue;
+            /* div 块级元素转换为行内元素 */
+            display: inline;
+        }
+
+        span {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            /* 转换行内块 */
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">xiaomi</a>
+    <a href="#">xiaomi</a>
+    <div>我是块级元素</div>
+    <div>我是块级元素</div>
+    <span>行内元素转换为行内块级元素</span>
+    <span>行内元素转换为行内块级元素</span>
+</body>
+
+</html>

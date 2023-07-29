@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .son {
+            /* 绝对定位 */
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+        }
+
+        .father {
+            /* 父级元素有定位 */
+            /* position: relative; */
+            width: 500px;
+            height: 500px;
+            background-color: skyblue;
+        }
+
+        .gradfather {
+            position: relative;
+            width: 800px;
+            height: 800px;
+            background-color: orange;
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <li>如果没有父元素或者祖先元素，就以浏览器为准定位。</li>
+    <li>如果父元素或者祖先元素没有定位，就以浏览器为准定位。</li>
+    <li>如果父元素或者祖先元素有定位（相对，绝对，固定定位），则以最近一级的有定位元素为准定位。</li>
+    <li>脱标</li>
+    <hr>
+
+    <div class="gradfather">
+        <div class="father">
+            <div class="son">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

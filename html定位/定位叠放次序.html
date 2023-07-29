@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            position: absolute;
+            top: 100px;
+            left: 0;
+            width: 200px;
+            height: 200px;
+        }
+
+        .one {
+            z-index: 1;
+            background-color: orange;
+        }
+
+        .two {
+            z-index: 2;
+            left: 50px;
+            top: 150px;
+            background-color: skyblue;
+        }
+
+        .three {
+            left: 100px;
+            top: 200px;
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <li>数值可以是正整数，负整数，零，默认auto</li>
+    <li>数值越大，盒子越靠上</li>
+    <li>不能加单位</li>
+    <li>只有定位的盒子才有z-index属性</li>
+    <hr>
+    <div class="one box">one</div>
+    <div class="two box">two</div>
+    <div class="three box">three</div>
+</body>
+
+</html>
