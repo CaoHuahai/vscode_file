@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 0;
+            height: 0;
+            /* 以下两项只是为了兼容旧版浏览器，新版可略 */
+            line-height: 0;
+            font-size: 0;
+            border-top: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-left: 100px solid gray;
+            border-bottom: 100px solid transparent;
+        }
+
+        .box2 {
+            width: 0;
+            height: 0;
+            line-height: 0;
+            font-size: 0;
+            border-top: 100px solid skyblue;
+            border-right: 100px solid orange;
+            border-left: 100px solid gray;
+            border-bottom: 100px solid red;
+        }
+
+        .jd {
+            position: relative;
+            width: 120px;
+            height: 249px;
+            background-color: gray;
+        }
+
+        .jd span {
+            position: absolute;
+            right: 15px;
+            top: -10px;
+            width: 0;
+            height: 0;
+            line-height: 0;
+            font-size: 0;
+            border: 5px solid transparent;
+            border-bottom-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <hr>
+    <div class="box2"></div>
+    <hr>
+    <div class="jd">
+        <span></span>
+    </div>
+</body>
+
+</html>

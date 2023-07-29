@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            margin: 80px auto;
+            /*  h-shadow水平阴影位置，v-shadow垂直阴影位置，blur模糊距离，spread阴影尺寸，color阴影颜色 */
+            /* h-shadow,v-shadow 必填，其余项选填 */
+            /* box-shadow: 10px 10px 4px rgb(0, 0, 0, .3); */
+            /* 默认外阴影，inset设置内阴影 */
+        }
+
+        /* 原先没有阴影，选中时出现阴影 */
+        div:hover {
+            box-shadow: 10px 10px 8px rgb(0, 0, 0, .3);
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <img src="../img/div阴影属性.png" alt="error" style="width: 35%;">
+</body>
+
+</html>

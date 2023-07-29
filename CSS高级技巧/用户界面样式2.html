@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            outline: none;
+        }
+
+        textarea {
+            outline: 0;
+            resize: none;
+        }
+
+        div {
+            width: 150px;
+            height: 80px;
+            background-color: orange;
+            margin: 100px auto;
+            /* 1.强制一行显示 */
+            white-space: nowrap;
+            /* 2.溢出部分隐藏 */
+            overflow: hidden;
+            /* 3.省略号代替超出部分 */
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+    <li>取消表单轮廓</li>
+    <input type="text"><br>
+    <li>防止拖拽文本域</li>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <hr>
+    <hr>
+    <li>溢出的文字省略号显示</li>
+    <div>
+        两岸猿声啼不住，轻舟已过万重山。
+    </div>
+</body>
+
+</html>

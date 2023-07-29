@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            cursor: not-allowed;
+        }
+
+        img {
+            /* 行内块元素 */
+            /* 文本和图片底线对齐 */
+            /* vertical-align: bottom; */
+            /* 中线对齐,即垂直居中 */
+            vertical-align: middle;
+            /* 顶线对齐 */
+            /* vertical-align: top; */
+        }
+
+        div {
+            background-color: gray;
+            border: 2px solid red;
+        }
+
+        div>img {
+            vertical-align: bottom;
+            /* display: block; */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 鼠标经过样式 -->
+    <li style="cursor: default;">我是鼠标：小白样式</li>
+    <li style="cursor: pointer;">我是鼠标：小手样式</li>
+    <li style="cursor: move;">我是鼠标：移动样式</li>
+    <li style="cursor: text;">我是鼠标：文本样式</li>
+    <li style="cursor: not-allowed;">我是鼠标：禁止样式 <a href="#">点击试试</a></li>
+    <hr>
+    <img src="/img/图片3.png" alt="error">早晨的校园
+    <hr>
+    <li>处理图片底侧有空白缝隙</li>
+    <div>
+        <li>更改vertical-align属性（因为默认是bottom）</li>
+        <li>把图片（行内块）转换为块级元素</li>
+        <img src="/img/xiaomi_13u.jpg">xiaomi_13u
+    </div>
+
+</body>
+
+</html>

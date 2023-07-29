@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin 盒子外边距</title>
+    <style>
+        div {
+            width: 100px;
+            height: 50px;
+            background-color: skyblue;
+        }
+
+        /* margin和padding属性配置几乎相同 */
+        #one {
+            margin-bottom: 10px;
+        }
+
+        #three {
+            margin-top: 10px;
+        }
+
+        .father {
+            height: 400px;
+            width: 400px;
+            background-color: gray;
+            margin-top: 50px;
+            /* border: 1px solid transparent; */
+            /* padding: 1px; */
+            overflow: hidden;
+        }
+
+        .son {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="one">1</div>
+    <div>2</div>
+    <div id="three">3</div>
+    <hr>
+    <!-- 相邻块元素外边距合并 -->
+    <div style="margin-bottom: 20px;">January</div>
+    <div style="margin-top: 10px;">February</div>
+    <hr>
+    <!-- 嵌套块元素外边距的塌陷问题 -->
+    <!-- 1.可以为父元素定义上边框 -->
+    <!-- 2.可以为父元素定义上内边框 -->
+    <!-- 3.可以为父元素添加overflow:hidden -->
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+
+</html>

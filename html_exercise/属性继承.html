@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>继承</title>
+    <style>
+        body {
+            color: black;
+            /* 如果子元素没有设置行高，则会继承父元素的行高为3 */
+            /* 此时子元素的行高是：当前子元素的文字大小的3倍 */
+            font: 20px/3 'miscrosoft yahei';
+        }
+
+        /* 就近原则，靠近选中主体的生效 */
+        /* i important 优先级最高 */
+        body {
+            color: skyblue;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        span {
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div>骄傲的少年</div>
+    <p>南征北战</p>
+    <span>最初的梦想</span>
+    <ul>
+        <li>大海</li>
+    </ul>
+    <img src="../img/first_choice.png" width="600px">
+</body>
+
+</html>

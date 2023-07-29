@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格细线边框</title>
+    <style>
+        table {
+            width: 500px;
+            height: 251px;
+        }
+
+        th {
+            height: 35px;
+        }
+
+        table,
+        td,
+        th {
+            /* 合并相邻细线 */
+            border-collapse: collapse;
+            border: 2px solid orange;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table align="center" cellspacing="0">
+        <thead></thead><!--thead表格头部 -->
+        <tr>
+            <th>排名</th>
+            <th>关键字</th>
+            <th>趋势</th>
+            <th>今日搜索</th>
+            <th>最近七日</th>
+            <th>相关链接</th>
+        </tr>
+        <tbody></tbody><!--tbody表格主体 -->
+        <tr>
+            <td>1</td>
+            <td>鬼吹奵</td>
+            <td><img src="../img/图片3.png" height="20"></td>
+            <td>46133</td>
+            <td>49651</td>
+            <td><a href="#">贴吧</a>&nbsp;<a href="#">图片</a>&nbsp;<a href="#">百科</a></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>流浪地球</td>
+            <td><img src="../img/图片3.png" height="20"></td>
+            <td>46183</td>
+            <td>55651</td>
+            <td><a href="#">贴吧</a>&nbsp;<a href="#">图片</a>&nbsp;<a href="#">百科</a></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>西虹市首富</td>
+            <td><img src="../img/图片3.png" height="20"></td>
+            <td>66133</td>
+            <td>56651</td>
+            <td><a href="#">贴吧</a>&nbsp;<a href="#">图片</a>&nbsp;<a href="#">百科</a></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>夏洛特的烦恼</td>
+            <td><img src="../img/图片3.png" height="20"></td>
+            <td>64133</td>
+            <td>51651</td>
+            <td><a href="#">贴吧</a>&nbsp;<a href="#">图片</a>&nbsp;<a href="#">百科</a></td>
+        </tr>
+    </table>
+</body>
+
+</html>
